@@ -175,7 +175,7 @@ function searchIngredients(allDishes) {
     // TODO #4: Gather user input for an ingredient to search for, then filter for all dishes that INCLUDE this ingredient in their ingredients array property
     let userInput = prompt("Please enter an ingredient you would like to search by: ")
     let results = allDishes.filter(function (el) {
-        if (el.cuisine.allDishes.includes(userInput)) {
+        if (el.ingredients.includes(userInput)) {
             return true;
         } else {
             return false;
