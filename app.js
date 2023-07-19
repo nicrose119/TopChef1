@@ -188,7 +188,11 @@ function searchIngredients(allDishes) {
 function generateCuisineDishName(allDishes) {
     alert("Combining cuisine and dish names...")
     // TODO #5: Apply the concatenatorFunction to each dish in allDishes, then log to the console the modified result
+    let results = allDishes.map(function (el){
+        return el.cuisine + " " + el.name
+    })
     alert("Successfully combined cuisine and dish names!  Check the console for full output.")
+    return results
 }
 
 // <<<<<<<<<<<<<<<<< EMAIL AND TEXT MARKETING MESSAGES <<<<<<<<<<<<<<<<<
